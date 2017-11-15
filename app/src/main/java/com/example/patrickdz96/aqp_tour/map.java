@@ -102,7 +102,7 @@ public class map extends Fragment{
 
                     googleMap.addMarker(new MarkerOptions()
                             .position(new LatLng(-16.399387345815672,-71.53664810793458))
-                            .title("My Location")
+                            .title("Mi Ubicacion")
                             .icon(BitmapDescriptorFactory.fromResource(R.mipmap.player)));
 
 
@@ -118,11 +118,13 @@ public class map extends Fragment{
 
                         @Override
                         public boolean onMarkerClick(Marker arg0) {
-                            if(arg0.getTitle().equals("PLAZA DE ARMAS DE AREQUIPA")) // if marker source is clicked
+                            if(arg0.getTitle().equals("PLAZA DE ARMAS DE AREQUIPA")) { // if marker source is clicked
                                 Toast.makeText(getContext(), "MOSTRANDO INFORMACION", Toast.LENGTH_SHORT).show();
                                 Intent myIntent = new Intent(getContext(), LugarTuristico.class);
                                 //myIntent.putExtra("name",texto.getText().toString()); //Optional parameters
-                                 getContext().startActivity(myIntent);
+                                getContext().startActivity(myIntent);
+                            }
+
 
 
                                 //Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();// display toast

@@ -29,7 +29,10 @@
             android:id="@+id/descripcion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="EXAMPLE"
+            android:text="Cuando se fundó la ciudad el 15 de agosto de 1540 por García Manuel de Carvajal en el valle del río Chili como
+Villa de la Asunción de Nuestra Señora del Valle Hermoso de Arequipala la ciudad empezó a construirse con ella la plaza mayor.
+Al poco tiempo de fundada la villa, Carlos V de Alemania y I de España la elevó a la categoría de ciudad, por real cédula fechada en Fuensalida (Toledo), el 22 de septiembre de 1541.
+En 1844 hubo un gran incendio destruyó casi toda la antigua Catedral, los Portales de Arequipa entre otros por lo que fue obligado a reconstruir. La reconstrucción fue el último gran cambio que tuvo."
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textSize="24sp"
