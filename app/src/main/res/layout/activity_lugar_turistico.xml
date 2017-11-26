@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--hize cambios aquì-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.patrickdz96.aqp_tour.LugarTuristico">
-
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="495dp"
+    tools:context="com.example.patrickdz96.aqp_tour.LugarTuristico"
         android:orientation="horizontal"
         android:weightSum="1"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="0dp">
 
 
-        <ImageView
-            android:id="@+id/imagen"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/plaza" />
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plaza" />
 
 
-        <TextView
+    <TextView
             android:id="@+id/descripcion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -38,6 +34,4 @@ En 1844 hubo un gran incendio destruyó casi toda la antigua Catedral, los Porta
             android:textSize="24sp"
             android:textStyle="bold" />
 
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

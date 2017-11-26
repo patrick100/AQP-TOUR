@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:gravity  esto lo pone en el centro recuerda -->
+<!--deiseño liquido es un diseño general sin importar el dispositivo-->
+<!-- cada boton va a tener peso android:layout_weight , -->
+<!--esto lo inclui para el ojito android.support.design.widget.TextInputLayout -->
+<!--android:weightSum="4"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+
+    android:orientation="vertical"
+    tools:context="com.example.patrickdz96.aqp_tour.Login"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="247dp"
+        android:layout_height="146dp"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/plaza" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="233dp"
+            android:layout_height="43dp"
+            android:ems="11"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:shadowColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="135dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nombres"
+            android:layout_width="221dp"
+            android:layout_height="43dp"
+            android:ems="11"
+            android:hint="@string/nombres"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="135dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/apellidos"
+            android:layout_width="221dp"
+            android:layout_height="36dp"
+            android:ems="11"
+            android:hint="@string/apellido"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="135dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- espacion entre los elementos-->
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="224dp"
+        android:layout_height="32dp"
+        app:passwordToggleEnabled="true"
+        android:layout_weight="0.19">
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="227dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:onClick="registrar"
+        android:text="Registrar" />
+
+    <Button
+        android:id="@+id/regresar"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:onClick="regresar"
+        android:text="regresar" />
+
+    <!-- wrap_content que se adante al contenido en layout_height-->
+
+</LinearLayout>
