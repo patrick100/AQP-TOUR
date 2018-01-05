@@ -8,11 +8,11 @@
 
 
     <LinearLayout
-        android:layout_width="850dp"
-        android:layout_height="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="7dp">
+        tools:layout_editor_absoluteY="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:text="Cuando se fundó la ciudad el 15 de agosto de 1540 por García Manuel de Carvajal."
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="59dp" />
@@ -70,26 +70,21 @@
             android:layout_weight="0.46"
             android:orientation="horizontal">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
+                android:layout_width="65dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:onClick="play_dialogo"
-                android:text="PLAY" />
+                android:src="@android:drawable/ic_media_play"
+
+                />
 
             <SeekBar
                 android:id="@+id/seekBar"
-                android:layout_width="700dp"
+                android:layout_width="800dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="SUB"
-                android:textAlignment="center" />
         </LinearLayout>
 
     </LinearLayout>

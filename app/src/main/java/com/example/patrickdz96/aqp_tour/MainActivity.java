@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity
 
         //arguments.putInt("TIPO", 6);map.setArguments(arguments);
         fragment.beginTransaction().replace(R.id.contenedor,map).commit();
+
+
+
+
 
 
         //String mybus;
@@ -97,8 +102,15 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            // MenuLugaresTuristicos
+            Toast.makeText(this, "MOSTRANDO MENU LUGARES", Toast.LENGTH_SHORT).show();
+            Intent myIntent = new Intent(this, Lista_Lugares_Turisticos.class);
+            this.startActivity(myIntent);
+
+        }
+
+        /*
+        else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -109,6 +121,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+        */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

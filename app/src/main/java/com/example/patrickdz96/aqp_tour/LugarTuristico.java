@@ -131,14 +131,14 @@ public class LugarTuristico extends AppCompatActivity {
     public void atras(View view) {
         //Toast.makeText(this, "ATRAS", Toast.LENGTH_LONG).show();
         i--;
-        if(i<0){i=0;}
+        if(i<0){i=3;}
         img.setImageResource(ImageList[i]);}
 
 
     public void adelante(View view) {
         //Toast.makeText(this, "ADELANTE", Toast.LENGTH_LONG).show();
         i++;
-        if(i>3){i=3;}
+        if(i>3){i=0;}
         img.setImageResource(ImageList[i]);}
 
 
