@@ -225,7 +225,7 @@ public class map extends Fragment{
 
         //if (bundle != null) {
         //    tipo = bundle.getInt("TIPO");
-            //int value2 = bundle.getInt("VALUE2", -1);
+        //int value2 = bundle.getInt("VALUE2", -1);
         //}
 
 
@@ -349,7 +349,7 @@ public class map extends Fragment{
 
 
 
-                                //Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();// display toast
+                            //Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();// display toast
                             return true;
                         }
 

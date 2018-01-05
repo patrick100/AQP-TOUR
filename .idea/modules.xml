@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AQP-TOUR.iml" filepath="$PROJECT_DIR$/AQP-TOUR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUIADO-TURISTICO-ANDROID.iml" filepath="$PROJECT_DIR$/GUIADO-TURISTICO-ANDROID.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

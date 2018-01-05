@@ -36,4 +36,9 @@ dependencies {
 
 
     testCompile 'junit:junit:4.12'
+
+    //añadiendo libreria para el gif
+   // compile 'com.felipecsl:gifimageview:2.1.0'
+    //gif
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
 }
